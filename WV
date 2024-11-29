@@ -1740,8 +1740,8 @@
         "id": "b7cb7822-3991-4f13-9cdd-fb2a20de1922",
         "fieldName": "Latino",
         "justification": "Right",
-        "fieldFullName": "Ethnicity: Are you Spanish or Hispanic origin, such as Maxican American, Latino American, Puero Rican or Cuban?",
-        "genericName": "Ethnicity: Are you Spanish or Hispanic origin, such as Maxican American, Latino American, Puero Rican or Cuban?",
+        "fieldFullName": "Ethnicity: Are you Spanish or Hispanic?",
+        "genericName": "Ethnicity: Are you Spanish or Hispanic?",
         "type": "number",
         "itemLength": 1,
         "fieldLength": 1,
@@ -1879,6 +1879,17 @@
             "validMaxRange": null,
             "children": [],
             "mdeDependentQuestions": []
+          },
+          {
+            "id": "6d605dcf-aa4f-4b05-8524-7ba1f3215985",
+            "name": null,
+            "label": "Don't know/Not Sure",
+            "type": "Answer",
+            "value": "8",
+            "validMinRange": null,
+            "validMaxRange": null,
+            "children": [],
+            "mdeDependentQuestions": []
           }
         ],
         "patientMde": null,
@@ -1970,7 +1981,19 @@
             "validMaxRange": null,
             "children": [],
             "mdeDependentQuestions": []
+          },
+          {
+            "id": "4cfe8d94-e2e5-4fd2-b88a-362ffb8a1eac",
+            "name": null,
+            "label": "Don't know/Not Sure",
+            "type": "Answer",
+            "value": "8",
+            "validMinRange": null,
+            "validMaxRange": null,
+            "children": [],
+            "mdeDependentQuestions": []
           }
+
         ],
         "patientMde": null,
         "patientFieldValue": "1"
@@ -4028,13 +4051,13 @@
         "headerField": null,
         "mdeFieldsOptions": [
           {
+            "type": "Answer",
+            "value": "1",
             "id": "2d90cefe-6ecd-40c1-a84e-49c1d8765380",
             "name": null,
             "label": "Obese: BMI 30, consider as a risk factor for CVD",
-            "type": "Answer",
-            "value": "1",
-            "validMinRange": null,
-            "validMaxRange": null,
+            "validMinRange": "30",
+            "validMaxRange": "10000",
             "children": [],
             "mdeDependentQuestions": []
           },
@@ -4044,8 +4067,8 @@
             "label": "Overweight BMI 25.0 – 29.9",
             "type": "Answer",
             "value": "2",
-            "validMinRange": null,
-            "validMaxRange": null,
+            "validMinRange": "25.0",
+            "validMaxRange": "29.9",
             "children": [],
             "mdeDependentQuestions": []
           },
@@ -4055,8 +4078,8 @@
             "label": "Normal BMI 18.5 - 24.3",
             "type": "Answer",
             "value": "3",
-            "validMinRange": null,
-            "validMaxRange": null,
+            "validMinRange": "18.5",
+            "validMaxRange": "24.3",
             "children": [],
             "mdeDependentQuestions": []
           },
@@ -4066,8 +4089,8 @@
             "label": "Underweight BMI 18.5",
             "type": "Answer",
             "value": "4",
-            "validMinRange": null,
-            "validMaxRange": null,
+            "validMinRange": "0",
+            "validMaxRange": "18.5",
             "children": [],
             "mdeDependentQuestions": []
           }
